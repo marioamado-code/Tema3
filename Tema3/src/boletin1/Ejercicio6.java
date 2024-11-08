@@ -20,11 +20,11 @@ public class Ejercicio6 {
 			// Lo guardamos en la tabla
 			tabla[i] = num;
 		}
-		
+		//Creamos el array que volvera a leer los numeros
 		for (int i = 0; i < tabla.length; i++) {
-			
+			//Imprimimos el numero correspondiente
 			System.out.print(tabla[i]);
-			
+			//Hacemos un if para ver si es par o impar
 			if(tabla[i]%2==0) {
 				System.out.println(" par");
 			}else
