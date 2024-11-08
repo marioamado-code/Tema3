@@ -7,7 +7,7 @@ public class Ejercicio7 {
 	public static void main(String[] args) {
 		// Introducimos la variable temperatura media del mes
 		int temp;
-		//Introducimos la variable mes
+		//Introducimos la variable mes 
 		int mes=1;
 		// Introducimos la tabla meses
 		int meses[] = new int[12];
