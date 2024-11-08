@@ -24,20 +24,21 @@ public class Ejercicio5 {
 			tabla[i] = numero;
 		}
 
-		// Creamos la variable numero maximo y minimo que se inicializan en el primer numero del
+		// Creamos la variable numero maximo y minimo que se inicializan en el primer
+		// numero del
 		// array
-		double max=tabla[0];
-		double min=tabla[0];
-		//Creamos un for each 
+		double max = tabla[0];
+		double min = tabla[0];
+		// Creamos un for each
 		for (double valor : tabla) {
-			//Vamos sumando terminos a la variable suma
+			// Vamos sumando terminos a la variable suma
 			suma += valor;
-			//Vamos asignando mayores y menores
-			max=Math.max(max,valor);
-			min=Math.min(min, valor);
+			// Vamos asignando mayores y menores
+			max = Math.max(max, valor);
+			min = Math.min(min, valor);
 		}
-		//imprimimos el resultado
-		System.out.println("El mayor es "+max+", el menor es "+min);
+		// imprimimos el resultado
+		System.out.println("El mayor es " + max + ", el menor es " + min);
 		System.out.println("La suma es " + suma);
 		// Cerramos el escáner
 		sc.close();
