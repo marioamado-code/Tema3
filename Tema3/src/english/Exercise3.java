@@ -27,16 +27,16 @@ public class Exercise3 {
 		while (!exit) {
 			if (exitSmall == false) {
 				// We create a number located in one row
-				 numberRow = rand.nextInt(1, 11);
+				 numberRow = rand.nextInt(1, 10);
 				// We create a number located in one column
-				numberColumn = rand.nextInt(1, 11);
+				numberColumn = rand.nextInt(1, 10);
 			}
-			// We create a for for the table to create a position of the fly
-			for (int i = 0; i < table.length; i++) {
-				for (int j = 0; j < table[i].length; j++) {
+			// create a position of the fly
+	
+				
 					fly = table[numberRow][numberColumn];
-				}
-			}
+				
+			
 
 			// We ask for a position
 
