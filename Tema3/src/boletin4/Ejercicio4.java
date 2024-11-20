@@ -17,41 +17,43 @@ public class Ejercicio4 {
 		// Creamos el escaner
 
 		Scanner sc = new Scanner(System.in);
-
+		//pedimos el numero
 		System.out.println("Introduzca numero clave");
-
+		//lo leemos
 		clave = sc.nextInt();
-
-	 resultado=buscar(t,clave);
-		
-	 if(resultado!=-1) {
-		 System.out.println("La clave se encuentra en la posición: " + resultado); 
-	 }else {
-		 System.out.println("La clave no se encuentra en el array.");
-	 }
-	// Cerramos el escaner
-				sc.close();
-	 }
-	
-
-	
-	
-static int buscar(int t[], int clave) {
-	int num=-1;
-	
-	for(int i=0;i<t.length;i++) {
-		
-	
-	if(clave==t[i]) {
-		num=i;
-		break;
+		//Llamamos a la función
+		resultado = buscar(t, clave);
+		//Hacemos la respuesta segun las opciones
+		if (resultado != -1) {
+			System.out.println("La clave se encuentra en la posición: " + resultado);
+		} else {
+			System.out.println("La clave no se encuentra en el array.");
+		}
+		// Cerramos el escaner
+		sc.close();
 	}
-		
-		
-	
-	
-	
-}
-	return num;
-}
+	//Creamos la función
+	static int buscar(int t[], int clave) {
+		//Creamos el indice
+		int indice = 0;
+		//Creamos el boolean para salir del while
+		boolean enc = false;
+		//Creamos el while hasta que se acabe la tabla o encuentre el numero
+		while (indice < t.length && !enc) {
+			//si es igual se sale del bucle
+			if (t[indice] == clave) {
+				enc = true;
+			} else {
+				// si no se va aumentando
+				indice++;
+			}
+
+		}
+		//si no se encontro se devuelve -1
+		if (!enc) {
+			indice = -1;
+		}
+		// devolvemos el indice
+		return indice;
+	}
 }
