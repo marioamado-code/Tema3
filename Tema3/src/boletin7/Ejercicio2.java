@@ -33,6 +33,7 @@ public class Ejercicio2 {
 		// encuentre con otra, para esto haremos que cada vez
 		//que se pone en una columna se suma al contador de esa columna uno
 		matriz[matriz.length-1][columna]=j1;
+		matriz[0][4]=j2;
 		sc.close();
 	}
 
