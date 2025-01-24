@@ -8,7 +8,7 @@ public class Ejercicio6 {
 	public static void main(String[] args) {
 		// constante fin
 		final String FIN = "fin";
-		// conjunto que va poniendo al final
+		// conjunto que va comparando su valor, si es string su orden alfabetico 
 		TreeSet<String> nombres = new TreeSet<>();
 		// variable que almacena el nombre
 		String nombre = "";
@@ -25,6 +25,7 @@ public class Ejercicio6 {
 		}
 		// se imprimen los nombres
 		System.out.println(nombres);
+		
 		sc.close();
 
 	}
